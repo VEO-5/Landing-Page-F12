@@ -1,0 +1,120 @@
+.mini-dashboard {
+  width: 100%;
+  height: 480px;
+  padding: 64px 64px 0 64px;
+  background-color: var(--color-60);
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+  /* Increased fading effect at the bottom */
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 95%);
+  mask-image: linear-gradient(to bottom, black 60%, transparent 95%);
+}
+
+.md-inner {
+  width: 100%;
+  height: 480px;
+  background: #000;
+  border-radius: 12px 12px 0 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: none;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  overflow: hidden;
+  box-shadow: 0 -40px 80px rgba(0, 0, 0, 0.5);
+}
+
+.md-sidebar {
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.02);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.md-logo {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+.md-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.md-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #666;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.md-nav-item.active {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+.md-content {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.md-stat-card,
+.md-chart-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.md-label {
+  font-size: 12px;
+  color: #666;
+}
+
+.md-value-group {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.md-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.md-delta {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-brand);
+}
+
+.md-simple-chart {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.chart-line {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.05);
+  width: 100%;
+}

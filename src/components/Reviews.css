@@ -1,0 +1,124 @@
+.reviews {
+  padding: 160px 0;
+  background-color: var(--color-100);
+}
+
+.reviews-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 80px;
+}
+
+.header-left .badge-pill {
+  width: fit-content;
+  background: var(--color-60);
+  border: 1px solid var(--color-border);
+  padding: 4px 12px;
+  border-radius: 80px;
+  font-size: 13px;
+  color: var(--color-brand);
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.reviews-title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -3px;
+  color: #888;
+}
+
+.reviews-title span {
+  color: #fff;
+}
+
+.header-right {
+  margin-bottom: 8px;
+}
+
+.reviews-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.reviews-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.review-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.reviewer-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviewer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.reviewer-name-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.reviewer-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.verified-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3b82f6; /* Verified blue */
+  width: 16px;
+  height: 16px;
+}
+
+.reviewer-handle {
+  font-size: 14px;
+  color: #666;
+}
+
+.review-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+@media (max-width: 1024px) {
+  .reviews-columns { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  .reviews-columns { grid-template-columns: 1fr; }
+  .reviews-header { flex-direction: column; align-items: flex-start; gap: 40px; }
+  .reviews-title { font-size: 48px; }
+}

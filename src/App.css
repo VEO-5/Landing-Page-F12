@@ -1,0 +1,36 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.footer {
+  padding: 40px 16px 80px;
+}
+
+.footer .divider {
+  margin-bottom: 32px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-links a:hover {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}

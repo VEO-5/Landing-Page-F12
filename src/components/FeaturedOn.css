@@ -1,0 +1,88 @@
+.featured-on {
+  padding: 60px 0;
+  background-color: var(--color-100);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  overflow: hidden;
+}
+
+.featured-content {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  width: 100%;
+}
+
+.featured-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: #888;
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+
+.logo-ticker {
+  flex: 1;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+
+.logo-set {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding-right: 80px;
+}
+
+.logo-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  opacity: 1;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.logo-item .logo-icon {
+  font-size: 18px;
+  color: #fff;
+}
+
+.logo-item.contra .logo-icon { color: #888; }
+.logo-item.contra .logo-name { letter-spacing: 1px; }
+
+.logo-item.awwwards .logo-name { 
+  font-style: italic; 
+  text-decoration: underline; 
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+.logo-item.lemon .logo-icon { filter: grayscale(1); }
+.logo-item.lemon .logo-name { font-weight: 500; font-family: serif; }
+
+.logo-item.framer .logo-icon { 
+  background: #fff; 
+  color: #000; 
+  padding: 2px 4px; 
+  border-radius: 2px;
+  font-size: 10px;
+  line-height: 1;
+}
+
+@media (max-width: 1024px) {
+  .featured-content {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    text-align: center;
+  }
+}
