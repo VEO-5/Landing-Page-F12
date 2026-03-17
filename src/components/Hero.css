@@ -80,12 +80,29 @@
 
 .hero-title {
   color: var(--color-white);
+  font-size: 96px; /* Larger title for hero impact as seen in image */
+  line-height: 1.1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.highlight-pill {
+  display: inline-block;
+  background: rgba(43, 38, 24, 0.8); /* Dark brownish/gold background for 'decisions' */
+  color: var(--color-brand);
+  padding: 0 40px;
+  border-radius: 40px;
+  margin-left: 10px;
+  border: 1px solid rgba(255, 223, 125, 0.1);
 }
 
 .hero-subtitle {
-  max-width: 60%;
+  max-width: 600px;
   text-align: center;
-  color: var(--color-text);
+  color: rgba(255, 255, 255, 0.4); /* Muted subtitle as seen in image */
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 .hero-cta {

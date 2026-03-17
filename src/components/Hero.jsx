@@ -29,23 +29,16 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="badge">
-            <span className="badge-dot" />
-            AI-Powered Analytics
-          </div>
           <h1 className="heading-1 hero-title">
-            Turn data into decisions
+            <span>Turn data</span>
+            <span>into <span className="highlight-pill">decisions</span></span>
           </h1>
           <p className="body-lg hero-subtitle">
-            Powerful analytics and reporting that empowers your team to make smarter business choices.
+            Powerful analytics and reporting that empowers your <br/> team to make smarter business choices.
           </p>
           <div className="hero-cta">
-            {/* The Fully Rounded Animated Button from XML */}
             <Button variant="yellow">
               Start 14-day trial
-            </Button>
-            <Button variant="black" className="btn-ghost">
-              See how it works
             </Button>
           </div>
           <p className="hero-note">No credit card required · Free for 14 days</p>
