@@ -91,7 +91,12 @@ export default function Reviews() {
                   whileHover={{ y: -5, borderColor: 'rgba(255, 223, 125, 0.2)' }}
                 >
                   <div className="card-header">
-                    <img src={item.avatar} alt={item.name} className="reviewer-avatar" />
+                    <img 
+                      src={item.avatar} 
+                      alt={item.name} 
+                      className="reviewer-avatar" 
+                      onError={(e) => { e.target.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(item.name)}&background=random`; }}
+                    />
                     <div className="reviewer-info">
                       <div className="reviewer-name-row">
                         <span className="reviewer-name">{item.name}</span>

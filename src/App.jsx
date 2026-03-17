@@ -4,6 +4,7 @@ import HowItWorks from './components/HowItWorks';
 import FeaturedOn from './components/FeaturedOn';
 import USPSection from './components/USPSection';
 import SmartDataIllustration from './components/SmartDataIllustration';
+import SmartAnalysisIllustration from './components/SmartAnalysisIllustration';
 import Reviews from './components/Reviews';
 import FAQ from './components/FAQ';
 import Pricing from './components/Pricing';
@@ -33,6 +34,7 @@ function App() {
           badge="Pricing modal"
           title="Smart analysis, simply delivered"
           description="Our AI-powered analytics spots trends, anomalies, and opportunities, delivering clear, actionable reports—no spreadsheets or complex queries, just instant insights."
+          illustration={<SmartAnalysisIllustration />}
         />
 
         <FeaturedOn />
