@@ -178,7 +178,7 @@ button {
 
 .btn-primary {
   background-color: var(--color-100);
-  color: var(--color-white);
+  color: var(--color-bg);
 }
 
 .btn-ghost {
