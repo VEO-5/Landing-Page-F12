@@ -2,7 +2,7 @@
   width: 100%;
   height: 480px;
   padding: 64px 64px 0 64px;
-  background-color: var(--color-60);
+  background-color: var(--color-bg-alt);
   border: 1px solid var(--color-border);
   border-radius: 24px;
   display: flex;
@@ -17,43 +17,44 @@
 .ad-inner {
   width: 100%;
   height: 500px;
-  background: #000;
+  background: var(--color-surface);
   border-radius: 12px 12px 0 0;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--color-border);
   border-bottom: none;
   padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 16px;
-  box-shadow: 0 -40px 80px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.05);
 }
 
 .ad-top-row {
   display: grid;
-  grid-template-columns: 1fr 1.6fr; /* Exact proportion from image */
+  grid-template-columns: 1fr 1.6fr;
   gap: 16px;
   height: 200px;
 }
 
 .ad-empty-card {
-  background: #111;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-border);
   border-radius: 24px;
 }
 
 .ad-stat-card {
-  background: #1a1a1a;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: 24px;
   padding: 32px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.04);
 }
 
 .ad-label {
   font-size: 14px;
-  color: #888;
+  color: var(--color-text);
   font-weight: 500;
 }
 
@@ -66,22 +67,23 @@
 .ad-value {
   font-size: 40px;
   font-weight: 700;
-  color: #fff;
+  color: var(--color-100);
   letter-spacing: -2px;
 }
 
 .ad-delta {
   font-size: 14px;
   font-weight: 600;
-  color: #00d280; /* Brighter green for +3% */
+  color: #00d280;
 }
 
 .ad-clients-card {
-  background: #1a1a1a;
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: 24px 24px 0 0;
   padding: 32px;
   flex: 1;
+  box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.04);
 }
 
 .ad-client-list {
@@ -111,20 +113,20 @@
 
 .client-name {
   font-size: 15px;
-  color: #fff;
+  color: var(--color-100);
   font-weight: 500;
 }
 
 .client-progress-track {
   width: 140px;
   height: 10px;
-  background: #2a2a2a;
+  background: var(--color-60);
   border-radius: 10px;
 }
 
 .client-progress-bar {
   height: 100%;
-  background: #4a4a4a;
+  background: #ccc;
   border-radius: 10px;
 }
 

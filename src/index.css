@@ -1,19 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap');
 
 :root {
-  --color-white: rgb(255, 255, 255);
-  --color-100: rgb(0, 0, 0);
-  --color-80: rgb(18, 18, 18);
-  --color-60: rgb(28, 28, 28);
-  --color-text: rgb(128, 128, 128);
-  --color-border: #252525;
-  --color-transparent: rgba(255, 255, 255, 0.06);
-  --color-brand: rgb(255, 223, 125);
-  --color-red: rgb(244, 63, 94);
-  --color-green: rgb(0, 188, 125);
-  --color-blue: rgb(43, 127, 255);
+  --color-white: #ffffff;
+  --color-bg: #ffffff;
+  --color-bg-alt: #f1f1f4;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f9f9fb;
+  --color-navbar-bg: rgba(255, 255, 255, 0.82);
+  --color-100: #0d0d0d;
+  --color-80: #262626;
+  --color-60: #f1f1f4;
+  --color-text: #666666;
+  --color-border: #e5e5e7;
+  --color-transparent: rgba(0, 0, 0, 0.04);
+  --color-brand: #ffc400;
+  --color-red: #e11d48;
+  --color-green: #10b981;
+  --color-blue: #2563eb;
   --font-base: 'Geist', sans-serif;
 }
+
+[data-theme='dark'] {
+  --color-bg: #000000;
+  --color-bg-alt: #0d0d0d;
+  --color-surface: #0d0d0d;
+  --color-surface-hover: #161616;
+  --color-navbar-bg: rgba(0, 0, 0, 0.82);
+  --color-100: #ffffff;
+  --color-80: #e5e5e7;
+  --color-60: #1a1a1a;
+  --color-text: #a1a1aa;
+  --color-border: #262626;
+  --color-transparent: rgba(255, 255, 255, 0.06);
+}
+
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -26,8 +46,8 @@ html {
 }
 
 body {
-  background-color: var(--color-100);
-  color: var(--color-white);
+  background-color: var(--color-bg);
+  color: var(--color-100);
   font-family: var(--font-base);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -51,6 +71,7 @@ button {
   letter-spacing: -3px;
   text-align: center;
   text-wrap: balance;
+  color: var(--color-100);
 }
 
 .heading-2 {
@@ -156,13 +177,13 @@ button {
 }
 
 .btn-primary {
-  background-color: var(--color-white);
-  color: var(--color-100);
+  background-color: var(--color-100);
+  color: var(--color-white);
 }
 
 .btn-ghost {
   background-color: var(--color-transparent);
-  color: var(--color-white);
+  color: var(--color-100);
   border: 1px solid var(--color-border);
 }
 

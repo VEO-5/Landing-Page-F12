@@ -19,36 +19,42 @@
 }
 
 .framer-button.white {
-  background-color: #fff;
-  color: #000;
+  background-color: #0d0d0d;
+  color: #ffffff;
 }
 
 .framer-button.dark {
-  background-color: #111;
-  color: #fff;
+  background-color: #f1f1f4;
+  color: #111111;
   border: 1px solid var(--color-border);
 }
 
 .button-icon-wrapper {
   width: 32px;
   height: 32px;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-brand);
+  color: var(--color.white);
   flex-shrink: 0;
 }
 
-.framer-button.white .button-icon-wrapper {
+.framer-button.yellow .button-icon-wrapper {
   background-color: #000;
+  color: var(--color-brand);
+}
+
+.framer-button.white .button-icon-wrapper {
+  background-color: rgba(255, 255, 255, 0.15);
   color: #fff;
 }
 
 .framer-button.dark .button-icon-wrapper {
-  background-color: #222;
-  color: #fff;
+  background-color: #ffffff;
+  color: #111;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .button-icon-wrapper svg {
@@ -58,7 +64,7 @@
 
 .framer-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
 .framer-button:active {

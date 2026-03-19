@@ -1,6 +1,6 @@
 .faq {
   padding: 160px 16px;
-  background: var(--color-100);
+  background: var(--color-bg);
 }
 
 .faq-header {
@@ -20,16 +20,19 @@
 
 .faq-item {
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   cursor: pointer;
-  transition: background 0.2s, border-color 0.2s;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
 }
 
 .faq-item:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.2);
+  background: var(--color-surface-hover);
+
+  border-color: var(--color-brand);
+  transform: translateY(-1px);
 }
 
 .faq-question {
@@ -37,7 +40,8 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  color: var(--color-white);
+  color: var(--color-100);
+  font-weight: 500;
 }
 
 .faq-number {

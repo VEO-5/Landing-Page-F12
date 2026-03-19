@@ -1,6 +1,6 @@
 .how-it-works {
   padding: 160px 0;
-  background-color: var(--color-100);
+  background-color: var(--color-bg);
 }
 
 .hiw-header {
@@ -20,6 +20,7 @@
   border-radius: 80px;
   font-size: 13px;
   color: var(--color-brand);
+
   font-weight: 600;
 }
 
@@ -28,10 +29,11 @@
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -2px;
+  color: var(--color-100);
 }
 
 .hiw-heading span {
-  opacity: 0.6;
+  opacity: 0.4;
 }
 
 .hiw-cards-grid {
@@ -42,18 +44,21 @@
 }
 
 .hiw-step-card {
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--color-surface);
+
   border: 1px solid var(--color-border);
   border-radius: 20px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   min-height: 540px;
-  transition: border-color 0.3s;
+  transition: transform 0.3s ease, border-color 0.3s;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
 
 .hiw-step-card:hover { 
-  border-color: rgba(255, 223, 125, 0.2); 
+  border-color: var(--color-brand);
+  transform: translateY(-4px);
 }
 
 .hiw-card-content {
@@ -64,11 +69,11 @@
 .hiw-card-text {
   font-size: 16px;
   line-height: 1.5;
-  color: #888;
+  color: var(--color-text);
 }
 
 .hiw-card-text strong {
-  color: #fff;
+  color: var(--color-100);
 }
 
 .hiw-card-visual-area {
@@ -78,7 +83,7 @@
   justify-content: center;
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.03) 0%, transparent 70%);
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.02) 0%, transparent 70%);
 }
 
 /* Onboarding Sequence Styles */
@@ -97,7 +102,7 @@
   bottom: 80px;
   left: 65px;
   width: 1px;
-  border-left: 1px dashed rgba(255, 255, 255, 0.1);
+  border-left: 1px dashed rgba(0, 0, 0, 0.1);
   z-index: 0;
 }
 
@@ -113,23 +118,23 @@
 }
 
 .hiw-status-pill.active .hiw-status-box {
-  background: var(--color-60);
+  background: var(--color-bg);
   border: 1px solid var(--color-brand);
-  color: #fff;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  color: var(--color-100);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .hiw-status-pill.muted .hiw-status-box {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  color: #444;
+  background: #f1f1f4;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  color: #ccc;
 }
 
 .hiw-pill-icon {
   width: 28px;
   height: 28px;
-  background: rgba(255, 223, 125, 0.1);
-  color: var(--color-brand);
+  background: rgba(255, 196, 0, 0.1);
+  color: #B28900;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -138,44 +143,39 @@
 }
 
 .hiw-status-pill.muted .hiw-pill-icon {
-  background: rgba(255, 255, 255, 0.05);
-  color: #444;
+  background: #e5e5e7;
+  color: #ccc;
 }
 
-/* Design Mockup Styles (Framer UI Panels) */
-.hiw-design-mockup {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
+/* Design Mockup Styles */
 .framer-panel {
   width: 220px;
-  background: #111;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--color-surface);
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 12px;
   padding: 16px;
-  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
   position: absolute;
 }
 
 .right-panel { top: 20px; right: 20px; z-index: 3; }
 .left-panel { top: 120px; left: 20px; z-index: 2; width: 200px; padding: 12px; }
 
-.panel-header { font-size: 11px; font-weight: 700; color: #666; margin-bottom: 20px; }
+.panel-header { font-size: 11px; font-weight: 700; color: #aaa; margin-bottom: 20px; }
 .panel-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
 .label { font-size: 12px; color: #888; }
-.value { font-size: 12px; color: #fff; }
+.value { font-size: 12px; color: #111; }
 
 .style-chips { display: flex; gap: 4px; }
-.chip { width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 11px; background: #222; border-radius: 4px; color: #666; }
+.chip { width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 11px; background: #f1f1f4; border-radius: 4px; color: #888; }
 .chip.active { background: var(--color-brand); color: #000; }
 
 .color-swatch-box { display: flex; align-items: center; gap: 8px; }
-.color-swatch-box .swatch { width: 14px; height: 14px; background: #fff; border-radius: 2px; }
+.color-swatch-box .swatch { width: 14px; height: 14px; background: #000; border-radius: 2px; }
 
 .color-picker-mock { height: 120px; display: flex; flex-direction: column; gap: 8px; }
-.gradient-area { flex: 1; background: linear-gradient(to right, #fff, var(--color-brand)); border-radius: 4px; }
+.gradient-area { flex: 1; background: linear-gradient(to right, #000, var(--color-brand)); border-radius: 4px; }
 .hue-slider { height: 8px; background: linear-gradient(to right, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00); border-radius: 4px; }
 
 /* Chat Visual Styles */
@@ -190,18 +190,17 @@
 .chat-bubble { display: flex; align-items: center; gap: 12px; max-width: 90%; }
 .chat-bubble.right { align-self: flex-end; flex-direction: row-reverse; }
 
-.chat-avatar { width: 28px; height: 28px; border-radius: 50%; background: #333; flex-shrink: 0; }
+.chat-avatar { width: 28px; height: 28px; border-radius: 50%; background: #f1f1f4; flex-shrink: 0; }
 .avatar-1 { background: linear-gradient(45deg, #f59e0b, #ef4444); }
 .avatar-2 { background: linear-gradient(45deg, #a855f7, #6366f1); }
 
 .bubble-content { 
-  background: rgba(255, 255, 255, 0.05); 
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #f1f1f4; 
+  border: 1px solid rgba(0, 0, 0, 0.03);
   padding: 10px 14px; 
   border-radius: 12px; 
   font-size: 13px; 
-  color: #fff; 
-  backdrop-filter: blur(4px);
+  color: #111; 
 }
 .bubble-content.yellow { background: var(--color-brand); color: #000; font-weight: 500; border: none; }
 

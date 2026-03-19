@@ -1,6 +1,6 @@
 .pricing {
   padding: 160px 0;
-  background-color: var(--color-100);
+  background-color: var(--color-bg);
   color: var(--color-text);
   overflow: hidden;
 }
@@ -15,8 +15,8 @@
 }
 
 .pricing-header .badge {
-  background: rgba(255, 223, 125, 0.1);
-  color: var(--color-brand);
+  background: rgba(255, 196, 0, 0.1);
+  color: #B28900;
   padding: 6px 16px;
   border-radius: 80px;
   font-weight: 600;
@@ -27,6 +27,7 @@
   font-size: 56px;
   font-weight: 700;
   letter-spacing: -2px;
+  color: var(--color-100);
 }
 
 .pricing-header p {
@@ -57,7 +58,7 @@
   font-size: 11px;
   font-weight: 700;
   z-index: 10;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .pricing-toggle {
@@ -90,12 +91,13 @@
   font-weight: 600;
   font-size: 15px;
   cursor: pointer;
+  position: relative;
   z-index: 2;
   transition: color 0.3s;
 }
 
 .toggle-btn.active {
-  color: white;
+  color: var(--color-bg);
 }
 
 .pricing-grid {
@@ -109,7 +111,8 @@
 
 .pricing-card {
   padding: 40px;
-  background: var(--color-100);
+  background: var(--color-surface);
+
   border: 1px solid var(--color-border);
   display: flex;
   flex-direction: column;
@@ -121,11 +124,13 @@
 .pricing-card:last-child { border-radius: 0 24px 24px 0; }
 
 .pricing-card.highlight {
-  background: #111;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
+  background: var(--color-surface);
+
+  border: 2px solid var(--color-brand);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
   z-index: 5;
   border-radius: 24px;
+  transform: scale(1.02);
 }
 
 .card-top {
@@ -149,7 +154,7 @@
 .price-amount {
   font-size: 56px;
   font-weight: 700;
-  color: white;
+  color: var(--color-100);
   letter-spacing: -2px;
 }
 
@@ -183,10 +188,10 @@
   font-weight: bold;
 }
 
-.feature-item.active { color: white; }
+.feature-item.active { color: var(--color-100); }
 .feature-item.active .feature-icon { background: var(--color-brand); color: #000; }
-.feature-item.inactive { color: #555; }
-.feature-item.inactive .feature-icon { background: #222; color: #444; }
+.feature-item.inactive { color: #ccc; }
+.feature-item.inactive .feature-icon { background: #f1f1f4; color: #ccc; }
 
 .card-footer {
   margin-top: auto;
@@ -194,5 +199,5 @@
 
 @media (max-width: 900px) {
   .pricing-grid { grid-template-columns: 1fr; gap: 20px; }
-  .pricing-card { border-radius: 24px !important; }
+  .pricing-card { border-radius: 24px !important; transform: none !important; }
 }

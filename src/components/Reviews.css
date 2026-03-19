@@ -1,6 +1,6 @@
 .reviews {
   padding: 160px 0;
-  background-color: var(--color-100);
+  background-color: var(--color-bg);
 }
 
 .reviews-header {
@@ -27,11 +27,11 @@
   font-weight: 700;
   line-height: 1;
   letter-spacing: -3px;
-  color: #888;
+  color: #ccc;
 }
 
 .reviews-title span {
-  color: #fff;
+  color: var(--color-100);
 }
 
 .header-right {
@@ -52,14 +52,16 @@
 }
 
 .review-card {
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 20px;
   padding: 32px;
+
   display: flex;
   flex-direction: column;
   gap: 20px;
   transition: border-color 0.3s, background-color 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
 .card-header {
@@ -90,7 +92,7 @@
 .reviewer-name {
   font-size: 16px;
   font-weight: 700;
-  color: #fff;
+  color: var(--color-100);
 }
 
 .verified-badge {
@@ -104,13 +106,13 @@
 
 .reviewer-handle {
   font-size: 14px;
-  color: #666;
+  color: #888;
 }
 
 .review-text {
   font-size: 15px;
   line-height: 1.6;
-  color: #ddd;
+  color: var(--color-text);
 }
 
 @media (max-width: 1024px) {

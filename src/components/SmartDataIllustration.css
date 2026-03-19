@@ -2,7 +2,7 @@
   width: 100%;
   height: 480px;
   padding: 64px 64px 0 64px;
-  background-color: var(--color-60);
+  background-color: #f9f9fb;
   border: 1px solid var(--color-border);
   border-radius: 24px;
   display: flex;
@@ -17,19 +17,19 @@
 .md-inner {
   width: 100%;
   height: 480px;
-  background: #000;
+  background: #ffffff;
   border-radius: 12px 12px 0 0;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   border-bottom: none;
   display: grid;
   grid-template-columns: 200px 1fr;
   overflow: hidden;
-  box-shadow: 0 -40px 80px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.05);
 }
 
 .md-sidebar {
-  border-right: 1px solid rgba(255, 255, 255, 0.05);
-  background: rgba(255, 255, 255, 0.02);
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  background: #f9f9fb;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 3px;
-  color: #fff;
+  color: #111;
 }
 
 .md-nav {
@@ -61,8 +61,8 @@
 }
 
 .md-nav-item.active {
-  background: rgba(255, 255, 255, 0.05);
-  color: #fff;
+  background: rgba(0, 0, 0, 0.05);
+  color: #111;
 }
 
 .md-content {
@@ -74,18 +74,19 @@
 
 .md-stat-card,
 .md-chart-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 16px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
 }
 
 .md-label {
   font-size: 12px;
-  color: #666;
+  color: #888;
 }
 
 .md-value-group {
@@ -97,7 +98,7 @@
 .md-value {
   font-size: 24px;
   font-weight: 700;
-  color: #fff;
+  color: #111;
 }
 
 .md-delta {
@@ -115,6 +116,6 @@
 
 .chart-line {
   height: 1px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.05);
   width: 100%;
 }
