@@ -10,8 +10,9 @@ export default function CTA() {
           <h2 className="heading-2 cta-title">Ready to make better decisions with your data?</h2>
           <p className="body-lg cta-desc">Try Feature free for 14 days. No credit card needed.</p>
           <div className="cta-actions">
-            <Button variant="yellow">Start free trial</Button>
-            <Button variant="black">Learn more</Button>
+            <Button variant="yellow" text="Start free trial" />
+            <Button variant="black" text="Learn more" />
+
           </div>
         </div>
       </div>

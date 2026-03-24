@@ -88,15 +88,6 @@
   letter-spacing: -3px;
 }
 
-.highlight-pill {
-  display: inline-block;
-  background: rgba(255, 196, 0, 0.1);
-  color: #B28900;
-  padding: 0 24px; /* Reduced padding for a tighter fit */
-  border-radius: 40px;
-  margin-left: 10px;
-  border: 1px solid rgba(255, 196, 0, 0.2);
-}
 
 .hero-subtitle {
   max-width: 600px;

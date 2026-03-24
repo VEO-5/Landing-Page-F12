@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://subbie.vercel.app/sitemap.xml
